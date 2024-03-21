@@ -1,0 +1,156 @@
+/* fonts components */
+@font-face {
+  font-family: "RalewayRegular";
+  src: url(font/Raleway/Raleway-Regular.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DelaGothicOne";
+  src: url(font/DelaGothicOne-Regular.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+/* end fonts components */
+/* general styles*/
+h1, h2, h3 {
+  font-family: "DelaGothicOne";
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 64px;
+  color: white;
+  max-width: 715px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  margin: 0px 80px 0px 80px;
+  font-family: "RalewayRegular";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+input[type=button] {
+  background-color: #DA1F39;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: "RalewayRegular";
+  font-size: 14px;
+  letter-spacing: 0.07em;
+  height: 50px;
+  width: 225px;
+  cursor: pointer;
+}
+
+input[type=button]:hover {
+  border: 1px solid #DA1F39;
+  color: #DA1F39;
+  background-color: white;
+  transition: all 0.2s ease-in;
+}
+
+/* end general styles*/
+/* header styles*/
+.laptop_header {
+  margin: 25px 0px 25px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.laptop_header .menu_header {
+  padding-left: 0px;
+}
+.laptop_header ul {
+  display: flex;
+  padding-inline-start: 0px;
+}
+.laptop_header ul li {
+  padding-right: 30px;
+}
+.laptop_header ul li :hover {
+  opacity: 70%;
+  transition: all 0.2s ease-in;
+}
+.laptop_header ul .chosen_menu a {
+  color: #DA1F39;
+  font-weight: bold;
+}
+.laptop_header .etnodim_logo_header {
+  max-width: 184px;
+}
+.laptop_header .information_header select {
+  text-transform: uppercase;
+  font-family: "RalewayRegular";
+  border: none;
+  font-size: 16px;
+}
+.laptop_header .information_header img {
+  max-width: 25px;
+}
+.laptop_header .information_header .cart {
+  padding-right: 0px;
+}
+
+/* end header styles*/
+/* main_screen section styles */
+.main_screen {
+  position: relative;
+}
+.main_screen .main_screen_background {
+  background: url(src/images/general/DSC_8575\ 1.jpg);
+  background-size: cover;
+  height: 551px;
+  display: flex;
+  align-items: center;
+}
+.main_screen .main_screen_information {
+  margin-left: 88px;
+}
+.main_screen .main_screen_information p {
+  color: white;
+  margin-top: 10px;
+}
+.main_screen .main_screen_information .main_button {
+  margin-top: 50px;
+}
+.main_screen .scroll_down {
+  position: absolute;
+  right: 50%;
+  bottom: -46px;
+}
+.main_screen .scroll_down .scroll_down_icon {
+  height: 63px;
+  width: 57px;
+}
+
+/* end main_screen section styles */
+/* second_banner section styles */
+.second_banner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.second_banner .banner .banner_photo {
+  max-width: 846px;
+  height: 420px;
+}
+
+/* end second_banner section styles */
+/* responsive*/
+@media screen and (min-width: 1990px) {
+  .laptop_mobile {
+    display: none;
+  }
+}/*# sourceMappingURL=styles.css.map */
